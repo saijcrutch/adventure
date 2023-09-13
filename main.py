@@ -7,9 +7,9 @@ intro = print(f"This story is about you, {name}, and your quest to get $100 to g
 
 def adventure():
     search = choices.search_choice
-
+    
     intro2 = print("You're not gonna go on vacation by laying in bed. Time to get up and make some money!")
-    user = input(f"Do you want to search {search[0]} (1) or search {search[1]} (2)? ")
+    user = input(f"Do you want to {search[0]} (1) or search {search[1]} (2)? ")
 
     
     
