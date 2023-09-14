@@ -8,4 +8,3 @@ neighbors = ['Bob', 'Ricky', 'Mary', 'Martha', 'David']
 weekend = days[1]
 weekdays = days[0]
 
-print(len(days[0])+len(days[1]))

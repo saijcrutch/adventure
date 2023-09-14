@@ -10,12 +10,25 @@ def adventure():
     search = choices.search_choice
     money = 0
 
-    while days > 0:
-        intro2 = print(f"You're not gonna go on vacation by laying in bed. You have ${money} \
-                    in your bank account so get up and make some money!")
-        user = input(f"Do you want to {search[0]} (1) or search {search[1]} (2)? ")
-        if user == '1':
-            print(f"Where do you want to work? {choices.locations[0][0]}, {choices.locations[1][0]}, {choices.locations[2][0]}")
+    print(f"You're not gonna go on vacation by laying in bed. You have ${money} in your bank account so get up and make some money!")
+    user = input(f"Do you want to {search[0]} (1) or search {search[1]} (2)? ")
+    if user == "y":
+        input(f"Where do you want to work? {choices.locations}? ")
+
+def first_item(x):
+    count = 0
+    list = []
+    new_list = []
+
+    for item in x:
+        list.append(item[0])
+
+    for item1 in list:
+        count += 1
+        y = f"{item1} ({count})"
+        new_list.append(y)
+
+    print(', '.join(new_list))
 
 def money_total():
     money_tot = 0
@@ -29,11 +42,6 @@ def money_total():
         print(f"You actually made ${money_tot}. Go take that vacation. You earned it")
     else:
         print(f"You made ${money_tot}! That's ${money_tot - goal} over your goal. Now you can really treat yourself!!!")
-
-def no_of_days(lists):
-    count = 0
-    for x in lists:
-        count += len(lists)
-    return count
     
 
+first_item(choices.locations)
