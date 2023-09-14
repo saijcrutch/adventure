@@ -7,3 +7,5 @@ time = [['Morning', 4], ['Afternoon', 4], ['Evening', 4], ['Night', 12]]
 neighbors = ['Bob', 'Ricky', 'Mary', 'Martha', 'David']
 weekend = days[1]
 weekdays = days[0]
+
+print(len(days[0])+len(days[1]))
