@@ -1,3 +1,5 @@
+import random
+
 binary_choice = ['yes', 'no']
 search_choice = ['online', 'in-person']
 in_person_jobs = [['cutting grass', 10], ['moving furniture', 20], ['dog walking', 15], ['car washing', 25]]
@@ -36,6 +38,7 @@ def append(x):
 
     return new_list
 
-
 neighbor_jobs = append(in_person_jobs)
+n_jobs = random.choice(neighbor_jobs)
 
+print()
