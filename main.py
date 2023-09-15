@@ -46,11 +46,10 @@ def adventure():
             randoms = random.randrange(len(choices.neighbors))
             print(f"There should be some jobs in the neighborhood that you can do. Why don't you ask your \
 neighbors: {', '.join(choices.neighbor_jobs)}?")
-            print(f"It seems that your neighbors {random.choices")
+            print(f"It seems that your neighbor(s) {', '.join(random.sample(choices.neighbors, randoms))} want you to \
+{job[0]} for ${job[1]} apiece.")
             break
             
-
-
 
 def first_item(x):
     count = 0

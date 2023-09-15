@@ -2,7 +2,7 @@ import random
 
 binary_choice = ['yes', 'no']
 search_choice = ['online', 'in-person']
-in_person_jobs = [['cutting grass', 10], ['moving furniture', 20], ['dog walking', 15], ['car washing', 25]]
+in_person_jobs = [['cut grass', 10], ['move furniture', 20], ['walk dogs', 15], ['wash cars', 25]]
 locations = [['Burger King', 10], ['Walmart', 12], ['Lowes', 15]]
 days = [['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], ['Saturday', 'Sunday']]
 time = [['Morning', 4], ['Afternoon', 4], ['Evening', 4], ['Night', 12]]
@@ -40,5 +40,3 @@ def append(x):
 
 neighbor_jobs = append(in_person_jobs)
 n_jobs = random.choice(neighbor_jobs)
-
-print()
