@@ -23,4 +23,19 @@ dog_pay = in_person_jobs[2][1]
 car_pay = in_person_jobs[3][1]
 
 all_days = int(len(days[0])+len(days[1]))
- 
+
+def append(x):
+    list = []
+    new_list = []
+
+    for item in x:
+        list.append(item[0])
+
+    for item1 in list:
+        new_list.append(item1)
+
+    return new_list
+
+
+neighbor_jobs = append(in_person_jobs)
+
